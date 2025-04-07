@@ -151,7 +151,6 @@ export default function Products() {
   if (error) return <Text>Error: {error.message}</Text>
 
   const getItemVisuals = (item: any) => {
-    console.log("alla produkter", item);
     if (item.backgroundAnimationCard?.source != undefined) {
       return <View style={styles.itemImageBackground}>
         <LottieView
